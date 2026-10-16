@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sofa-coder-mcp"
+version = "0.1.0"
+description = "闭眼 Vibe Coding（躺平当甲方模式）：静默改代码，张嘴说人话。像打电话一样指挥 AI Agent 写代码的语音 MCP / Skill。"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "sofa-coder contributors" }]
+keywords = [
+  "mcp", "voice", "speech", "asr", "tts", "vad",
+  "claude", "claude-code", "cursor", "llm", "agent", "hands-free", "vibe-coding",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Software Development :: Code Generators",
+]
+dependencies = [
+  "fastmcp>=2.0",
+  "edge-tts>=6.1",
+  "sounddevice>=0.4.6",
+  "numpy>=1.24",
+  "onnxruntime>=1.16",
+  "miniaudio>=1.59",
+  "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+# ASR 后端三选一（装哪个用哪个，也可以全装）
+asr-mlx = ["mlx-whisper>=0.4"]       # Apple Silicon 本地方案（推荐 Mac 用户）
+asr-funasr = ["funasr>=1.1"]         # SenseVoiceSmall：中英混杂效果最佳（依赖较大）
+asr-faster = ["faster-whisper>=1.0"] # 跨平台本地 Whisper（Windows / Linux 推荐）
+
+[project.scripts]
+sofa-coder = "sofa_coder.__main__:main"
+sofa-coder-mcp = "sofa_coder.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_GITHUB_USERNAME/sofa-coder"
+Issues = "https://github.com/YOUR_GITHUB_USERNAME/sofa-coder/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sofa_coder"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

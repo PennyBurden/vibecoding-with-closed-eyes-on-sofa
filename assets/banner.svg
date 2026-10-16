@@ -1,0 +1,37 @@
+<svg width="880" height="280" viewBox="0 0 880 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="sofa-coder banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#151b26"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9f43"/>
+      <stop offset="1" stop-color="#ff6b6b"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="880" height="280" rx="20" fill="url(#bg)"/>
+
+  <!-- 声波 -->
+  <g fill="url(#accent)">
+    <rect x="66"  y="118" width="8" height="44"  rx="4" opacity="0.45"/>
+    <rect x="86"  y="100" width="8" height="80"  rx="4" opacity="0.6"/>
+    <rect x="106" y="82"  width="8" height="116" rx="4" opacity="0.8"/>
+    <rect x="126" y="94"  width="8" height="92"  rx="4" opacity="0.65"/>
+    <rect x="146" y="110" width="8" height="60"  rx="4" opacity="0.5"/>
+    <rect x="166" y="122" width="8" height="36"  rx="4" opacity="0.4"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="220" y="132" font-family="SF Pro Display, Helvetica Neue, PingFang SC, sans-serif" font-size="58" font-weight="700" fill="#f5f5f5">sofa-coder</text>
+  <text x="222" y="176" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="24" fill="#e6b35a">闭眼 Vibe Coding · 躺平当甲方模式</text>
+  <text x="222" y="210" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="18" fill="#9aa4b2">静默改代码，张嘴说人话 —— 像跟技术合伙人打电话一样写代码</text>
+
+  <!-- 底部命令 chip -->
+  <rect x="222" y="228" width="316" height="34" rx="8" fill="#1c2330" stroke="#2c3648"/>
+  <text x="238" y="250" font-family="SF Mono, Menlo, Consolas, monospace" font-size="15" fill="#7ee2a8">uvx sofa-coder-mcp</text>
+
+  <!-- 沙发 -->
+  <g transform="translate(760,206)">
+    <text x="0" y="0" font-size="56">🛋️</text>
+  </g>
+</svg>

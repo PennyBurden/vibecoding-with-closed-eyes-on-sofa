@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# 测试与工具缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 运行时下载的模型与临时音频
+*.onnx.tmp
+*.mp3.tmp
+*.wav.tmp
+*.aiff
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
