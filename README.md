@@ -9,7 +9,7 @@
 > **静默改代码，张嘴说人话。**
 > Stop staring at diffs. Close your eyes, lean back, and vibe-code like a tech lead on a phone call.
 
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/sofa-coder/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/sofa-coder/actions/workflows/ci.yml)
+[![CI](https://github.com/PennyBurden/vibecoding-with-closed-eyes-on-sofa/actions/workflows/ci.yml/badge.svg)](https://github.com/PennyBurden/vibecoding-with-closed-eyes-on-sofa/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/sofa-coder-mcp)](https://pypi.org/project/sofa-coder-mcp/)
 [![Python](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -77,9 +77,9 @@ MCP 提供耳朵和嘴巴，Skill 提供大脑的行为铁律。把本仓库的
 [SKILL.md](SKILL.md) 装进技能目录即可：
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/sofa-coder.git
+git clone https://github.com/PennyBurden/vibecoding-with-closed-eyes-on-sofa.git
 mkdir -p ~/.claude/skills/sofa-coder
-cp sofa-coder/SKILL.md ~/.claude/skills/sofa-coder/SKILL.md
+cp vibecoding-with-closed-eyes-on-sofa/SKILL.md ~/.claude/skills/sofa-coder/SKILL.md
 ```
 
 ## 🩺 跑不通？先体检

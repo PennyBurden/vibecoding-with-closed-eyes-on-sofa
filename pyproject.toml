@@ -50,8 +50,8 @@ sofa-coder = "sofa_coder.__main__:main"
 sofa-coder-mcp = "sofa_coder.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/YOUR_GITHUB_USERNAME/sofa-coder"
-Issues = "https://github.com/YOUR_GITHUB_USERNAME/sofa-coder/issues"
+Homepage = "https://github.com/PennyBurden/vibecoding-with-closed-eyes-on-sofa"
+Issues = "https://github.com/PennyBurden/vibecoding-with-closed-eyes-on-sofa/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sofa_coder"]
